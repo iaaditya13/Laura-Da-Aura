@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laura Dà Aura</h1>
+        <div class="dashboard">
+            <p>Your current aura: <span id="aura-points">1000</span></p>
+        </div>
+        <div class="input-section">
+            <textarea id="user-input" placeholder="Describe your situation..."></textarea>
+            <button onclick="calculateAura()">Update Aura</button>
+        </div>
+        <div class="response-section">
+            <p id="response-message"></p>
+        </div>
+        <div id="transaction-history" class="transaction-history">
+            <!-- Aura transaction history will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

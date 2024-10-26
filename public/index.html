@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laura Da Aura</h1>
+
+        <!-- Login/Register Section -->
+        <div class="login-section">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button onclick="login()">Login</button>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- Aura Dashboard -->
+        <div class="dashboard" style="display: none;">
+            <p>Your current aura: <span id="aura-points">1000</span></p>
+        </div>
+
+        <!-- Input Section for Aura Calculation -->
+        <div class="input-section" style="display: none;">
+            <textarea id="user-input" placeholder="Describe your situation..."></textarea>
+            <button onclick="calculateAura()">Update Aura</button>
+        </div>
+
+        <!-- Response Section -->
+        <div class="response-section" style="display: none;">
+            <p id="response-message"></p>
+        </div>
+
+        <!-- Transaction History -->
+        <div id="transaction-history" class="transaction-history" style="display: none;">
+            <!-- Aura transaction history will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

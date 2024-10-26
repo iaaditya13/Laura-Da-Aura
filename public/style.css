@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A020F0;
+    color: #333;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents body from scrolling */
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background: linear-gradient(135deg, #C04AE2,#efbbee);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Prevents the container from overflowing */
+    position: relative;
+
+}
+
+h1 {
+    color: #ffff;
+    margin-bottom: 20px;
+    z-index: 1; /* Ensures the heading stays on top */
+    position: relative;
+    font-family: "Dancing Script", cursive;
+}
+
+.dashboard {
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #A020F0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #A020F0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #A020F0;
+}
+
+.response-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#response-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.transaction-history {
+    width: 100%;
+    max-height: 150px; /* Adjusted height */
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+.transaction {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+/* Light green for positive aura changes */
+.transaction.positive {
+    background-color: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+/* Red for negative aura changes */
+.transaction.negative {
+    background-color: #f8d7da;
+    border-left: 5px solid #dc3545;
+}
