@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 body {
     font-family: Arial, sans-serif;
     background-color: #A020F0;
@@ -8,39 +7,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents body from scrolling */
+    padding: 20px; /* Adds spacing around the container */
 }
 
 .container {
-    width: 90%;
-    max-width: 500px;
-    padding: 20px;
-    background: linear-gradient(135deg, #C04AE2,#efbbee);
+    width: 80%; /* Decreased width */
+    max-width: 400px; /* Decreased max width */
+    padding: 15px; /* Reduced padding */
+    background: linear-gradient(135deg, #C04AE2, #efbbee);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    overflow: hidden; /* Prevents the container from overflowing */
-    position: relative;
-
 }
 
 h1 {
-    color: #ffff;
-    margin-bottom: 20px;
-    z-index: 1; /* Ensures the heading stays on top */
-    position: relative;
+    color: #fff;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 1.5em; /* Reduced font size */
     font-family: "Dancing Script", cursive;
 }
 
 .dashboard {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 1em; /* Reduced font size */
 }
 
 .input-section {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -48,60 +44,61 @@ textarea {
     width: 100%;
     height: 100px;
     padding: 10px;
+    margin: 10px 0; /* Adds margin above and below */
     border-radius: 4px;
     border: 1px solid #A020F0;
     font-size: 16px;
-    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
 }
+
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 8px; /* Reduced padding */
     background-color: #A020F0;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #A020F0;
+    font-size: 14px; /* Reduced font size */
 }
 
 .response-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#response-message {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #d32f2f;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9em; /* Reduced font size */
 }
 
 .transaction-history {
     width: 100%;
-    max-height: 150px; /* Adjusted height */
+    height: 100px; /* Reduced height */
     overflow-y: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px; /* Reduced padding */
     margin-top: 10px;
-    padding-right: 5px;
+}
+
+.placeholder {
+    color: #aaa;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em; /* Reduced font size */
 }
 
 .transaction {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 8px; /* Reduced margin */
     border-radius: 4px;
     text-align: left;
+    font-size: 0.9em; /* Reduced font size */
 }
 
-/* Light green for positive aura changes */
 .transaction.positive {
     background-color: #d4edda;
     border-left: 5px solid #28a745;
 }
 
-/* Red for negative aura changes */
 .transaction.negative {
     background-color: #f8d7da;
     border-left: 5px solid #dc3545;

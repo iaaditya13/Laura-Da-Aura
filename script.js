@@ -10,7 +10,6 @@ const keywords = {
     "apologized": +50,
     "cheated": -300,
     "studied": +150,
-    // Add more keywords and their corresponding aura points
 };
 
 function calculateAura() {
@@ -32,14 +31,18 @@ function calculateAura() {
         document.getElementById('response-message').textContent = "Can't tell your aura.";
     }
 
-    // Clear the textarea
     document.getElementById('user-input').value = '';
 }
 
 function addTransaction(description, change) {
     const transactionHistory = document.getElementById('transaction-history');
+    const placeholder = transactionHistory.querySelector('.placeholder');
+    
+    // Remove placeholder text if it's the first transaction
+    if (placeholder) {
+        placeholder.style.display = 'none';
+    }
 
-    // Create a new transaction element
     const transaction = document.createElement('div');
     transaction.className = `transaction ${change > 0 ? 'positive' : 'negative'}`;
     transaction.innerHTML = `
@@ -47,6 +50,5 @@ function addTransaction(description, change) {
         <p><strong>Aura Change:</strong> ${change > 0 ? '+' : ''}${change} points</p>
     `;
 
-    // Add the new transaction to the top of the transaction history
     transactionHistory.prepend(transaction);
 }
