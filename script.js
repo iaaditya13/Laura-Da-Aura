@@ -11,7 +11,9 @@ const keywords = [
     ["apologized", +50],
     ["cheated", -300],
     ["studied", +150],
-    ["hurt", -100] // Added new keyword
+    ["hurt", -100],
+    ["farted", -500]
+    // Added new keyword
 ];
 
 // Combinations of keywords and their specific aura changes
